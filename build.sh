@@ -19,19 +19,19 @@ if [ $ex == true ]; then
     git pull
     chmod +x build.sh
 
-    docker image build -t offenware/mqtt2influxdb:latest .
+    docker image build -t offenware/dockermqtt2influxdb:latest .
 
-    docker push offenware/mqtt2influxdb:latest
+    docker push offenware/dockermqtt2influxdb:latest
 
-    sudo truncate -s 0 $(docker inspect --format='{{.LogPath}}' mqtt2influxdb)
+    sudo truncate -s 0 $(docker inspect --format='{{.LogPath}}' dockermqtt2influxdb)
     # testing: 
 
     echo "==========================================================="
     echo "=                                                         ="
-    echo "=          docker run offenware/mqtt2influxdb                ="
+    echo "=          docker run offenware/dockermqtt2influxdb                ="
     echo "=                                                         ="
     echo "==========================================================="
-    # docker run offenware/mqtt2influxdb
+    # docker run offenware/dockermqtt2influxdb
 fi
 
 cd -

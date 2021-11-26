@@ -1,8 +1,8 @@
 version: '3.7'
 
 services:
-  mqtt2influxdb:
-    image: revenberg/mqtt2influxdb:latest
+  mqtt2influxdbclock:
+    image: offenware/mqtt2influxdb:latest
     container_name: mqtt2influxdb
     restart: always
     environment:

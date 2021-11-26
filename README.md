@@ -1,13 +1,13 @@
 # dockermqtt2influxdb
 
 sudo apt install gnupg2 pass
-docker image build -t dockermqtt2influxdb:latest  .
-docker login -u offenware
-docker image push offenware/dockermqtt2influxdb:latest
+docker image build -t tagelus/dockermqtt2influxdb:latest  .
+docker login -u tagelus
+docker image push tagelus/dockermqtt2influxdb:latest
 
-docker run offenware/dockermqtt2influxdb
+docker run tagelus/dockermqtt2influxdb
 
-docker exec -it ??? /bin/sh
+docker exec -it dockermqtt2influxdb /bin/sh
 
 docker push offenware/dockermqtt2influxdb:latest
 

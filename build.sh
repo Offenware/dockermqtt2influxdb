@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# version 2021-08-07 15:20
-
 cd ~/dockermqtt2influxdb
 
 if [ -n "$1" ]; then

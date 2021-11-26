@@ -16,8 +16,6 @@ else
   fi
 fi
 
-ex=true
-
 if [ $ex == true ]; then
     git pull
     chmod +x build.sh

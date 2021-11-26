@@ -7,7 +7,7 @@ services:
     restart: always
     environment:
       - LOG_LEVEL=DEBUG
-      - MQTT_ADDRESS=192.168.2.71
-      - MQTT_TOPIC=reading/#
-      - INFLUXDB_ADDRESS=192.168.2.71
+      - MQTT_ADDRESS=192.168.2.61
+      - MQTT_TOPIC=esp32/#
+      - INFLUXDB_ADDRESS=192.168.2.61
       - INFLUXDB_PORT=8086

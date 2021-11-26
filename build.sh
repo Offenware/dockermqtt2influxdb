@@ -12,6 +12,7 @@ else
     ex=true
   else
     ex=false
+    echo "stop"
   fi
 fi
 

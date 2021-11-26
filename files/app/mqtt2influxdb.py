@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""mqtt2influxdb"""
+"""mqtt2influxdbclock"""
 
 import json
 import logging

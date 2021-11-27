@@ -101,6 +101,8 @@ def on_message(mosq, userdata, msg):
 
     if not success:
         print('error writing to database')
+    else:
+        logging.debug('writing to database')
 
 def _parse_dict(topic, payload):
     payloadlist = {}

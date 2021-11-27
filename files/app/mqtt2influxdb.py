@@ -83,6 +83,7 @@ def on_message(mosq, userdata, msg):
     payload = _parse_message(msg.topic, msg.payload)
 
     if not payload:
+        LOG.info('No payload')
         return
 
     json_body = {'points': [{
@@ -102,7 +103,7 @@ def on_message(mosq, userdata, msg):
     if not success:
         print('error writing to database')
     else:
-        LOG.info('writing to database')
+        LOG.info('writing to database: %s', json_body)
 
 def _parse_dict(topic, payload):
     payloadlist = {}
